@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="type-checker">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/base.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+       <section class="controls">
+           <h1>Type Checker</h1>
+
+           <div class="control-section">
+               <label>Your text</label>
+               <input type="text" name="sentence" placeholder="The quick brown fox...">
+           </div>
+
+           <div class="control-section">
+               <!-- Selector -->
+               <label>Typeface</label>
+               <select name="typeface">
+                   <option value="Kanit">Kanit</option>
+                   <option value="Playfair Display">Playfair Displa</option>
+                   <option value="Raleway">Raleway</option>
+                   <option value="Roboto">Roboto</option>
+               </select>
+           </div>
+
+           <div class="control-section">
+               <!-- Type size -->
+               <label>Type size <span class="range-output size-output" >128px</span></label>
+               <input type="range" name="type-size" min="40" max="200" step="1">
+
+              <!-- Font Weight -->
+              <label>Font weight<span class="range-output weight-output">400</span></label>
+              <input type="range" name="font-weight" min="100" max="900" step="100">
+
+              <!-- Leading -->
+              <label>Leading<span class="range-output leading-output">1.5</span></label>
+              <input type="range" name="line-height" min="0.75" max="2.5" step="0.1">
+           </div>
+
+           <div class="control-section">
+               <label>Italic</label>
+               <input type="checkbox" name="italic">
+           </div>
+           <div class="control-section">
+               <label>Colors</label>
+               <div class="colors">
+                   <div style="background-color: #000929; color: #fff" class="selected">a</div>
+                   <div style="background-color: #fff; color: #000929">a</div>
+                   <div style="background-color: #fb5870; color: #212c34">a</div>
+                   <div style="background-color: #e8effc; color: #624ce0">a</div>
+                   <div style="background-color: #ffc5b7; color: #233629">a</div>
+                   
+           </div>
+       </section>
+       <section class="output">
+
+           <textarea class="text-area">The quick brown fox jumps over the lazy dog</textarea>
+       </section>
+        
+        <script src="/type-checker.js" async defer></script>
+    </body>
+</html>
